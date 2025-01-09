@@ -1,0 +1,80 @@
+/* styles.css */
+
+/* Apply a moving gradient background to the body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #3b6c9e, #2a2e36, #28a745, #17a2b8);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Style the login form */
+form#loginForm {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Style the form labels */
+form#loginForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style the form inputs */
+form#loginForm input[type="text"],
+form#loginForm input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Style the submit button */
+form#loginForm button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form#loginForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the error message */
+form#loginForm #errorMessage {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    display: none; /* Hide by default */
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div id="profile">
+        <h1 id="userName">Loading...</h1>
+        <p id="email"></p>
+        <p id="userLevel"></p>
+        <p id="userXP"></p>
+        <p id="userXP"></p>
+        <p id="audit"></p>
+
+        <div id="stats">
+            <h2>Project Statistics</h2>
+
+            <!-- Container for XP graph with horizontal scrolling -->
+            <div id="xpGraphContainer" style="width: 100%; overflow-x: scroll;">
+                <!-- Increase the width and height of the graph -->
+                <div id="xpGraph" style="width: 2000px; height: 500px;">Loading XP Graph...</div>
+            </div>
+
+            <!-- Container for Audit Ratio graph -->
+            <h2>Audit Ratio</h2>
+            <div id="auditRatioGraphContainer" style="width: 100%; height: auto;">
+                <div id="auditRatioGraph" style="height: 500px;">Loading Audit Ratio Graph...</div>
+            </div>
+        </div>
+    </div>
+    <button id="logout">Logout</button>
+    <script src="profile.js"></script>
+</body>
+</html>
